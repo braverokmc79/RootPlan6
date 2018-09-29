@@ -115,12 +115,20 @@
           <wtpContextName>/</wtpContextName>
         </configuration>
       </plugin>
-      
-      
+            
+            <plugin>
+            	<groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat8-maven-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <url>http://ec2-13-125-255-212.ap-northeast-2.compute.amazonaws.com/</url>
+                    <path>/</path>
+                    <username>root</username>
+					<password>1111</password>
+               </configuration>
+      		</plugin>			       
     </plugins>
   </build>
-  
-  
   
   
   

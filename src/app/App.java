@@ -13,7 +13,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         String webappDirLocation = "WebContent/";
         Tomcat tomcat = new Tomcat();
-        tomcat.setPort(80);
+        tomcat.setPort(8090);
         Connector connector = tomcat.getConnector();
         connector.setURIEncoding("UTF-8");
         StandardContext ctx = (StandardContext) tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
